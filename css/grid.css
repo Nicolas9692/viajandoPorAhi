@@ -1,0 +1,64 @@
+* {
+ margin: 0;
+ padding: 0;
+
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+ .grid {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 6fr;
+  grid-template-rows: 1fr 6fr 1fr;
+  gap: 10px;
+ }
+ 
+ .grid>* {
+  border: 1px solid blue;
+  background-color: aqua;
+ }
+ 
+ .grid>header {
+  grid-row: 1/2;
+ }
+ 
+ .grid>section {
+  grid-row: 2/3;
+ }
+ 
+ .grid>footer {
+  grid-row: 3/4;
+}
+}
+
+/* Vista: DESKTOP */
+
+@media (min-width: 1024px) {
+
+.grid {
+ display: grid;
+ height: 100vh;
+ grid-template-columns: 6fr;
+ grid-template-rows: 2fr 6fr 2fr;
+ gap: 10px;
+}
+
+.grid>* {
+ border: 1px solid blue;
+ background-color: aqua;
+}
+
+.grid>header {
+ grid-row: 1/2;
+}
+
+.grid>section {
+ grid-row: 2/3;
+}
+
+.grid>footer {
+ grid-row: 3/4;
+}
+}
